@@ -1,9 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    colors: {
+      'primary': '#96b15d',
+      'secondary': '#c9ff58'
+    },
+    extend: {
+      fontFamily: {
+        playpen: ["Playpen Sans", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
-
