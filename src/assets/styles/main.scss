@@ -13,3 +13,9 @@
     font-family: "PlayPen Sans", system-ui, sans-serif;
   }
 }
+
+@layer components {
+  .card {
+    @apply mb-2 p-3 shadow-md rounded-md bg-white
+  }
+}

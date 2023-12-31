@@ -14,9 +14,12 @@
   <title>Inici | Tennis Buddies</title>
 </head>
 
-<body>
+<body class="bg-secondary bg-gradient-radial">
   <include src="./views/menu.html"></include>
-  <div class="h-svh bg-secondary bg-gradient-radial">
+  <div class="h-svh">
+    <include src="./views/list.html">
+      { "array": [ {"titol":"Pancho the One", "descripcio": "asdasd"} , "Tate"] }
+    </include>
   </div>
 
   <include src="./views/footer.html"></include>

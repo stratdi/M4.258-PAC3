@@ -12,7 +12,9 @@ module.exports = {
         'secondary': '#c9ff58'
       },
       backgroundImage: {
-        'gradient-radial': 'repeating-radial-gradient(circle at 0 0,#0000 0,#b9e160 40px),repeating-linear-gradient(#c9ff5855,#c9ff58);'
+        'gradient-radial': 'repeating-radial-gradient(circle at 0 0,#0000 0,#b9e160 40px),repeating-linear-gradient(#c9ff5855,#c9ff58);',
+        'quisom': "url('/src/assets/images/quisom_bg.jpeg')",
+        'poliesportiu': "url('/src/assets/images/quisom_pistes.jpeg')"
       }
     },
   },

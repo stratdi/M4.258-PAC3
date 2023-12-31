@@ -14,20 +14,21 @@
   <title>Qui som | Tennis Buddies</title>
 </head>
 
-<body>
+<body class="bg-secondary bg-gradient-radial">
   <include src="./views/menu.html"></include>
-  <main class="qui-som">
-    <div class="container-fluid qui-som--bg m-0">
-      <h2 class="text-center mb-3 text-light pt-5">Qui som</h2>
+  <main>
+    <div class="h-80 bg-quisom bg-cover bg-center">
+      <h2 class="font-courier text-white text-center mb-3 pt-12 text-3xl font-semibold">Qui som</h2>
     </div>
 
-    <section class="container px-2 mt-3">
-      <article class="row">
-        <div class="col-lg-3 card mb-2 p-3">
-          <blockquote cite="https://tennis.cat/millors-webs" class="fs-4 text-center m-0">El portal de referència de la
+    <section class="container mx-auto max-w-scrren-md lg:max-w-screen-lg xl:max-w-screen-xl mt-3">
+      <article class="flex flex-col lg:flex-row gap-3">
+        <div class="w-full lg:w-96 card">
+          <blockquote cite="https://tennis.cat/millors-webs" class="fs-4 text-center text-2xl m-0">El portal de
+            referència de la
             comunitat de tennis de la comarca de Palma.</blockquote>
         </div>
-        <div class="col-lg card ms-lg-2 mb-2 p-3">
+        <div class="w-fit card">
           Com a plataforma dedicada al món del tennis local, la nostra missió és proporcionar una experiència en línia
           completa per als amants d'aquest esport a la nostra comunitat. Amb un enfocament centrat en la promoció de
           tornejos locals, l'aprenentatge continu i la creació d'una xarxa activa de jugadors, aspirem a ser el punt de
@@ -38,40 +39,28 @@
         </div>
       </article>
 
-      <article class="row">
-        <ol class="list-group list-group-numbered mt-2 px-0">
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Classes particulars</div>
-              Oferim classes particulars de diferents nivells per tots els tipus de jugadors: des de l'inici fins a la
-              tecnificació.
-            </div>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Extraescolars</div>
-              Pels més petits apassionats d'aquest esport, els ajudam a iniciar-se en el món amb històries i petits
-              exercicis pràctics.
-            </div>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Lliga comarcal</div>
-              Vina a demostrar el teu nivell a la nostra lliga comarcal, on podràs donar-ho tot!
-            </div>
-          </li>
-        </ol>
+      <article class="mb-3">
+        <include src="./views/list.html">
+          { "array": [
+          { "titol":"Classes particulars", "descripcio": "Oferim classes particulars de diferents nivells per tots els
+          tipus de jugadors: des de l'inici fins a la tecnificació." },
+          { "titol":"Extraescolars", "descripcio": "Pels més petits apassionats d'aquest esport, els ajudam a iniciar-se
+          en el món amb històries i petits exercicis pràctics." },
+          { "titol":"Lliga comarcal", "descripcio": "Vina a demostrar el teu nivell a la nostra lliga comarcal, on
+          podràs donar-ho tot!" }
+          ]}
+        </include>
       </article>
 
-      <article class="row card mt-3">
-        <p class="fs-5 text-center m-2 text-uppercase">No t'ho pensis més, vina a visitar-nos i et quedaràs, t'ho
+      <article class="card">
+        <p class="text-center text-xl p-2 uppercase">No t'ho pensis més, vina a visitar-nos i et quedaràs, t'ho
           asseguram!</p>
       </article>
 
-      <article class="row card my-3">
-        <header class="qui-som__poliesportiu"></header>
-        <p class="text-center mt-3">Pots trobar-nos al centre esportiu <strong>Tecnificació Palmesana</strong></p>
-        <address class="text-center">Direcció: Carrer del monestir número 27, CP 07601</address>
+      <article class="my-3 bg-white shadow-md rounded-b-md">
+        <header class="h-96 bg-poliesportiu bg-cover bg-center"></header>
+        <p class="text-center py-3">Pots trobar-nos al centre esportiu <strong>Tecnificació Palmesana</strong></p>
+        <address class="text-center py-3">Direcció: Carrer del monestir número 27, CP 07601</address>
       </article>
     </section>
 
