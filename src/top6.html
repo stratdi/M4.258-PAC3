@@ -14,59 +14,38 @@
   <title>Top 6 | Tennis Buddies</title>
 </head>
 
-<body>
+<body class="bg-secondary bg-gradient-radial">
   <include src="./views/menu.html"></include>
   <main>
-    <h2 class="text-center mt-3">Top 6 de la lliga</h2>
-    <section class="reticula">
-      <div class="jugador">
-        <div>
-          <img class="jugador__imatge" src="assets/images/players/jugador_a.jpeg" alt="Andrew Arkins">
-        </div>
-        <p class="jugador__nom">Andrew Arkins</p>
-        <p class="jugador__descripcio">Un jugador de tennis consumat amb una tècnica impressionant, deslumbrant a la
-          pista amb la seva precisió, elegància i un domini magistral de cada cop.</p>
-      </div>
-      <div class="jugador">
-        <div>
-          <img class="jugador__imatge" src="assets/images/players/jugador_b.jpeg" alt="Sarah Abad">
-        </div>
-        <p class="jugador__nom">Sarah Abad</p>
-        <p class="jugador__descripcio">Una destacada jugadora de tennis que captiva amb la seva habilitat tècnica
-          excepcional, exhibint gràcia i precisió en cada cop sobre la pista.</p>
-      </div>
-      <div class="jugador">
-        <div>
-          <img class="jugador__imatge" src="assets/images/players/jugador_c.jpeg" alt="Miguel Gaucho">
-        </div>
-        <p class="jugador__nom">Miguel Gaucho</p>
-        <p class="jugador__descripcio">Un mestre autèntic a la pista, aquest jugador excepcional deslumbra amb la seva
-          destresa tècnica, consolidant-se com una força imparable en el món del tennis.</p>
-      </div>
-      <div class="jugador">
-        <div>
-          <img class="jugador__imatge" src="assets/images/players/jugador_d.jpeg" alt="Yvonne Gasparov">
-        </div>
-        <p class="jugador__nom">Yvonne Gasparov</p>
-        <p class="jugador__descripcio">Una jugadora excepcional amb la seva destresa tècnica excepcional, i una
-          determinació ferotge en cada partit, deixant una empremta indeleble en el món del tennis.</p>
-      </div>
-      <div class="jugador">
-        <div>
-          <img class="jugador__imatge" src="assets/images/players/jugador_e.jpeg" alt="Midori Tanaka">
-        </div>
-        <p class="jugador__nom">Midori Tanaka</p>
-        <p class="jugador__descripcio">Una jugadora en procés de desenvolupament, afrontant reptes amb tenacitat i
-          esforçant-se per millorar la seva destresa tècnica en cada partit.</p>
-      </div>
-      <div class="jugador">
-        <div>
-          <img class="jugador__imatge" src="assets/images/players/jugador_f.jpeg" alt="Pancho the One">
-        </div>
-        <p class="jugador__nom">Pancho the One</p>
-        <p class="jugador__descripcio">Estrella sorprenent al món del tennis, gràcies al seu joc original a quatre potes
-          i la batuda amb el seu barram.</p>
-      </div>
+    <h2 class="text-center my-3 font-courier text-3xl font-semibold">Top 6 de la lliga</h2>
+    <section class="flex flex-wrap justify-center gap-5 mb-5">
+      <include src="./views/card.html">
+        { "nom": "Andrew Arkins", "imatge": "jugador_a", "descripcio": "Un jugador de tennis consumat amb una
+        tècnica impressionant, deslumbrant a la pista amb la seva precisió, elegància i un domini magistral de cada
+        cop." }
+      </include>
+      <include src="./views/card.html">
+        { "nom": "Sarah Abad", "imatge": "jugador_b", "descripcio": "Una destacada jugadora de tennis que captiva amb
+        la seva habilitat tècnica excepcional, exhibint gràcia i precisió en cada cop sobre la pista." }
+      </include>
+      <include src="./views/card.html">
+        { "nom": "Miguel Gaucho", "imatge": "jugador_c", "descripcio": "Un mestre autèntic a la pista, aquest jugador
+        excepcional deslumbra amb la seva destresa tècnica, consolidant-se com una força imparable en el món del
+        tennis" }
+      </include>
+      <include src="./views/card.html">
+        { "nom": "Yvonne Gasparov", "imatge": "jugador_d", "descripcio": "Una jugadora excepcional amb la seva
+        destresa tècnica excepcional, i una determinació ferotge en cada partit, deixant una empremta indeleble en el
+        món del tennis." }
+      </include>
+      <include src="./views/card.html">
+        { "nom": "Midori Tanaka", "imatge": "jugador_e", "descripcio": "Una jugadora en procés de desenvolupament,
+        afrontant reptes amb tenacitat i esforçant-se per millorar la seva destresa tècnica en cada partit." }
+      </include>
+      <include src="./views/card.html">
+        { "nom": "Pancho the One", "imatge": "jugador_f", "descripcio": "Estrella sorprenent al món del tennis,
+        gràcies al seu joc original a quatre potes i la batuda amb el seu barram." }
+      </include>
     </section>
   </main>
   <include src="./views/footer.html"></include>
