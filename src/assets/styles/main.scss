@@ -15,6 +15,10 @@
 }
 
 @layer components {
+  .bg-radial {
+    @apply bg-secondary bg-gradient-radial
+  }
+
   .card {
     @apply mb-2 p-3 shadow-md rounded-md bg-white
   }
